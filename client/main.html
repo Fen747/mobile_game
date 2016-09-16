@@ -5,13 +5,27 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
   {{> game}}
 </body>
 
 <template name="game">
-  <div id="divGame">
+  <div class="ennemyBar">
+    <div class="ennemyDatabar">
 
+    </div>
+  </div>
+  <div id="divGame"></div>
+  <div class="mybar">
+    <div class="actionBar">
+      <button type="button" class="btn btn-default">
+        Defend
+      </button>
+      <button type="button" class="btn btn-default js-attack" data-line="a">
+        Attack
+      </button>
+    </div>
+    <div class="myDataBar">
+
+    </div>
   </div>
 </template>
