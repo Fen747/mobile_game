@@ -11,13 +11,14 @@
 <template name="game">
   <div class="ennemyBar">
     <div class="ennemyDatabar">
-
+      <span>Life:</span>
+      <b>{{ennemyLife}}%</b>
     </div>
   </div>
   <div id="divGame"></div>
-  <div class="mybar">
+  <div class="myBar">
     <div class="actionBar">
-      <button type="button" class="btn btn-default">
+      <button type="button" class="btn btn-default js-defend" data-line="a">
         Defend
       </button>
       <button type="button" class="btn btn-default js-attack" data-line="a">
@@ -25,7 +26,13 @@
       </button>
     </div>
     <div class="myDataBar">
-
+      <span>Life:</span>
+      <b>{{myLife}}%</b>
+      <br>
+      <span>Attacks :</span>
+      <b>{{myCurrentAttackStack}}</b>
+      <span>Defenses :</span>
+      <b>{{myCurrentDefenseStack}}</b>
     </div>
   </div>
 </template>
